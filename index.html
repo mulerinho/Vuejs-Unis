@@ -28,7 +28,7 @@
 
         <h3> {{message}}</h3>
         <h4 class="text-success"> Formatadas para maiúscula. <br> {{message | upper}} </h4>
-        <p> {{message | embaralha}} </p>
+        
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
@@ -37,7 +37,7 @@
         let app = new Vue({
             el: '#start',
             data: {
-                message: 'filtro para letras maiúsculas ou embaralhadas.'
+                message: 'filtro para formatar letras para maiúsculas.'
 
             },
             filters: {
@@ -47,8 +47,6 @@
                 }
 
             }
-
-
 
         })
 
